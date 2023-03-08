@@ -1,90 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 
 :root {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  line-height: 1.45;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	line-height: 1.45;
 }
 
 body {
-  margin: 0;
+	margin: 0;
 }
 
 .container {
-  aspect-ratio: 1600 / 900;
-  background: url(https://res.cloudinary.com/jlengstorf/image/upload/f_auto,q_auto/v1677647802/lwj/demo/gsap-bg.jpg);
-  background-size: contain;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+	aspect-ratio: 1600 / 900;
+	background: url(https://res.cloudinary.com/jlengstorf/image/upload/f_auto,q_auto/v1677647802/lwj/demo/gsap-bg.jpg);
+	background-size: contain;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
 }
 
 .container h1 {
-  color: #161420;
-  font-family: 'SF Pro', sans-serif;
-  font-size: 3.75vw;
-  font-variation-settings: 'wght' 700, 'wdth' 130;
-  line-height: 1.1;
-  position: absolute;
-  right: 7%;
-  text-align: right;
-  text-shadow: 1px 2px 4px #16142066;
-  top: 28%;
-  width: 50%;
+	color: #161420;
+	font-family: "SF Pro", sans-serif;
+	font-size: 3.75vw;
+	font-variation-settings: "wght" 700, "wdth" 130;
+	line-height: 1.1;
+	position: absolute;
+	right: 7%;
+	text-align: right;
+	text-shadow: 1px 2px 4px #16142066;
+	top: 28%;
+	width: 50%;
 }
 
 .container h1 em {
-  display: block;
-  font-family: 'Josefin Sans', sans-serif;
-  font-variation-settings: 'wght' 800;
-  font-size: 2.9em;
-  font-style: normal;
-  line-height: 0.8;
-  text-transform: uppercase;
+	display: block;
+	font-family: "Josefin Sans", sans-serif;
+	font-variation-settings: "wght" 800;
+	font-size: 2.9em;
+	font-style: normal;
+	line-height: 0.8;
+	text-transform: uppercase;
 }
 
 .button {
-  background: hotpink;
-  border: none;
-  border-radius: 0.25rem;
-  display: block;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 2.25vw;
-  font-weight: bold;
-  margin: 1rem auto;
-  padding: 1rem 1.5rem 0.625rem;
-  position: absolute;
-  right: 7%;
-  text-transform: uppercase;
-  top: 64%;
-  z-index: 20;
+	background: hotpink;
+	border: none;
+	border-radius: 0.25rem;
+	display: block;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 2.25vw;
+	font-weight: bold;
+	margin: 1rem auto;
+	padding: 1rem 1.5rem 0.625rem;
+	position: absolute;
+	right: 7%;
+	text-transform: uppercase;
+	top: 64%;
+	z-index: 20;
 }
 
 .cutout {
-  position: relative;
-  width: 100%;
-  z-index: 10;
+	position: relative;
+	width: 100%;
+	z-index: 10;
 }
 
 .heart {
-  bottom: calc(-1 * min(50px, 10vw));
-  left: 0;
-  mix-blend-mode: multiply;
-  position: absolute;
+	bottom: calc(-1 * min(50px, 10vw));
+	left: 0;
+	mix-blend-mode: multiply;
+	position: absolute;
 }
 
 footer {
-  margin: 2rem auto 3rem;
-  padding: 0 5%;
+	margin: 2rem auto 3rem;
+	padding: 0 5%;
 }
 
 footer p {
-  color: #464357;
-  text-align: center;
+	color: #464357;
+	text-align: center;
 }
 
 footer p a {
-  color: inherit;
+	color: inherit;
 }
