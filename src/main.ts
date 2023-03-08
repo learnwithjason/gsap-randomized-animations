@@ -1,4 +1,7 @@
 import { gsap } from "gsap";
+import { MotionPathPlugin } from "gsap/all";
+
+gsap.registerPlugin(MotionPathPlugin);
 
 import "./style.css";
 
@@ -18,6 +21,12 @@ button.addEventListener("click", (event) => {
 
 	const initialX = gsap.utils.random(0, w - width);
 
+	const floatDirection = gsap.utils.random([-1, 1]);
+
+	const getNextX = (dir: number): number => {
+		return gsap.utils.random(initialX, initialX + 200 * dir);
+	};
+
 	gsap.set(heart, {
 		width,
 		x: initialX,
@@ -27,7 +36,20 @@ button.addEventListener("click", (event) => {
 
 	gsap.to(heart, {
 		duration: 2,
-		y: endY,
+		motionPath: {
+			autoRotate: 90,
+			curviness: 1.25,
+			path: [
+				{
+					x: getNextX(floatDirection),
+					y: endY / gsap.utils.random(2, 4),
+				},
+				{
+					x: getNextX(floatDirection * -1), // reverse float direction
+					y: endY,
+				},
+			],
+		},
 		onComplete: () => {
 			container.removeChild(heart);
 		},
